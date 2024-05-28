@@ -1,0 +1,22 @@
+<div class="content-container">
+  <mat-card>
+    @if (isLoading) {<mat-spinner></mat-spinner>}
+    <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+      <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" name="email" ngModel #emilInput="ngModel" type="email" required>
+        <mat-error *ngIf="emilInput.invalid">Please enter a valid password</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" minlength="4" name="password" ngModel #passwordInput="ngModel">
+        <mat-error *ngIf="passwordInput.invalid">Please enter a valid password</mat-error>
+        <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-raised-button  type="submit" *ngIf="!isLoading">Login</button>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,78 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+/* Set the background image and styling for the container */
+.content-container {
+    height: calc(100vh - 64px);
+    /* Full viewport height minus the header height (64px is the typical height for mat-toolbar) */
+    width: 100vw;
+    /* Full viewport width */
+    background-image: url('/assets/images/newSkull.png');
+    background-size: cover;
+    /* Ensure the image covers the entire container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    box-sizing: border-box;
+    /* Include padding in height/width */
+}
+
+/* Style for mat-card to center it */
+mat-card {
+    background: rgba(0, 0, 0, 0.8);
+    /* Black background with slight transparency */
+    color: white;
+    /* Text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    max-width: 600px;
+    /* Limit the width of the card */
+    width: 100%;
+    /* Ensure the card takes full width up to max-width */
+}
+
+/* Style for mat-form-field */
+mat-form-field {
+    width: 100%;
+    /* Ensure form fields take full width of the card */
+    margin-bottom: 20px;
+    /* Space between form fields */
+}
+
+
+
+/* Style for mat-spinner to center it */
+mat-spinner {
+    display: block;
+    margin: 0 auto;
+    /* Center the spinner horizontally */
+}
+
+/* Additional styles for mat-error * */
+
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #555;
+}
+
+input[type=file] {
+    visibility: hidden;
+}
+img {
+    width: 100%;
+    /* height:fit-content; */
+}

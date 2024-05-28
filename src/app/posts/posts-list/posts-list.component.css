@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Set the background image and styling for the container */
+.content-container {
+  height: calc(100vh - 64px); /* Full viewport height minus the header height (64px is the typical height for mat-toolbar) */
+  width: 100vw; /* Full viewport width */
+  background-image: url('/assets/images/newSkull.png');
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  padding: 20px; /* Optional padding */
+  box-sizing: border-box; /* Include padding in height/width */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+/* Style the container for the expansion panels */
+.expansion-container {
+  width: 100%;
+  max-width: 600px; /* Limit the width of the panels */
+  margin-top: 20px; /* Space from the top of the container */
+}
+
+/* Style the mat-expansion-panel for dark mode */
+mat-expansion-panel {
+  background:  rgba(0, 0, 0, 0.6);; /* Black background with slight transparency */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between panels */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  color: white; /* Text color for readability */
+}
+
+/* Style the mat-expansion-panel-header */
+mat-expansion-panel-header {
+  font-weight: bold; /* Bold text for headers */
+  color: white; /* Ensure header text is readable */
+}
+
+/* Style the paragraph inside the expansion panel */
+mat-expansion-panel p {
+  color: white; /* Ensure paragraph text is readable */
+}
+
+/* Additional styles for mat-action-row buttons */
+mat-action-row a,
+mat-action-row button {
+    margin-right: 8px; /* Space between buttons */
+    color: white; /* Button text color for readability */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+mat-action-row a:hover,
+mat-action-row button:hover {
+    background-color: #444; /* Darker background color on hover */
+}
+
+.info-text {
+  color: white; /* Text color for info message */
+}
+
+.post-image img {
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+mat-paginator {
+  position: fixed;
+  bottom: 60px; /* Increase or decrease this value as needed for spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px; /* Match the width of your content */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8); /* Match the paginator with the dark theme */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+/* Ensure the paginator buttons are also styled */
+mat-paginator .mat-paginator-navigation-button {
+  color: white;
+}

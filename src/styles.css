@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+body { 
+  background-color: #2e2e2e; /* Dark background color for the whole app */
+  color: #fff; /* Light text color for the whole app */
+}
+
+/* Override the background color for MDC filled text fields */
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #555 !important; /* Make the background #555 */
+}
+
+/* Ensure the input text is white */
+.mdc-text-field--filled .mdc-text-field__input {
+  color: white !important; /* Set the input text color to white */
+  background-color: transparent !important; /* Ensure the input background is transparent */
+}
+
+/* Ensure the label is white */
+.mdc-text-field--filled .mdc-floating-label {
+  color: white !important; /* Set the label color to white */
+}
+
+/* Ensure the underline color is white */
+.mdc-text-field--filled .mdc-line-ripple {
+  background-color: white !important; /* Set the underline color to white */
+}
+
+/* Ensure the border color is white */
+.mdc-text-field--filled .mdc-notched-outline__leading,
+.mdc-text-field--filled .mdc-notched-outline__trailing,
+.mdc-text-field--filled .mdc-notched-outline__notch {
+  border-color: white !important; /* Set the outline border color to white */
+}
+
+/* Styles for mat-card and mat-form-field */
+mat-card {
+  background-color: #333 !important; /* Dark card background */
+  color: #fff !important; /* Light card text color */
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field .mat-form-field-underline {
+  background-color: #fff !important; /* Dark underline */
+}
+
+mat-form-field .mat-form-field-ripple {
+  background-color: #fff !important; /* Dark ripple */
+}
+
+mat-form-field .mat-form-field-label {
+  color: #fff !important; /* Light label text */
+}
+
+mat-form-field .mat-input-element {
+  color: #fff !important; /* Light input text */
+  background-color: transparent !important; /* Transparent background */
+}
+
+mat-form-field .mat-placeholder-required {
+  color: #fff !important; /* Light placeholder */
+}
+
+mat-form-field .mat-hint {
+  color: #fff !important; /* Light hint text */
+}
+
+/* Styles for mat-paginator */
+mat-paginator {
+  background-color: #333 !important; /* Dark paginator background */
+  color: #fff !important; /* Light paginator text */
+}
+
+mat-paginator .mat-button-base {
+  color: #fff !important; /* Light paginator button text */
+}
+
+.mat-toolbar {
+  background-color: #424242 !important; /* Dark toolbar background */
+  color: #fff !important; /* Light toolbar text */
+}
+
+.mat-toolbar a {
+  color: #fff !important; /* Light toolbar link text */
+}
+
+div.mat-mdc-select-panel {
+  width: 100%;
+  max-height: 275px;
+  outline: 0;
+  overflow: auto;
+  padding: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: static;
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Ensure items are displayed in a row */
+    align-items: center;
+  }
+
+  .mat-toolbar {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+  }
+  
+  /* Style the links */
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    color: white;
+  }
+  
+  /* Spacer for flex layout */
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Roboto,
+      "Helvetica Neue",
+      sans-serif;
+  }

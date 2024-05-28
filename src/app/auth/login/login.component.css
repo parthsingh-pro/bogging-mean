@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.content-container {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-image: url('/assets/images/newSkull.png');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+mat-card {
+    background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    color: white; /* Text color for readability */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    max-width: 400px; /* Optional: limit the width of the card */
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%; /* Full width fields */
+}
+
+mat-form-field .mat-form-field-infix {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark input background with transparency */
+    color: white; /* Input text color */
+}
+
+mat-form-field .mat-form-field-label {
+    color: white; /* Label text color */
+}
+
+mat-form-field .mat-error {
+    color: #ff4081; /* Error message color */
+}
+
+button.mat-icon-button {
+    color: white; /* Icon button color */
+}
+
+button.mat-raised-button {
+    color: white; /* Button text color for readability */
+    transition: background-color 0.3s;
+}
+
+button.mat-raised-button:hover {
+    background-color: #444; /* Darker teal on hover */
+}
